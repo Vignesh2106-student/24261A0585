@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Vigneshwar Registration Form</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Vigneshwar Registration Form</h2>
+
+<form id="regForm" onsubmit="return validateForm();">
+
+<label>First Name</label>
+<input type="text" id="fname">
+
+<label>Last Name</label>
+<input type="text" id="lname">
+
+<label>Father's Name</label>
+<input type="text" id="father">
+
+<label>Mother's Name</label>
+<input type="text" id="mother">
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>Phone Number</label>
+<input type="tel" id="phone">
+
+<label>Alternate Phone Number</label>
+<input type="text" id="alternatePhone" name="alternatePhone">
+
+<label>Gender</label>
+<br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<br><br>
+
+<label>Course</label>
+<select id="course">
+    <option value="">Select Course</option>
+    <option value="CSE">Computer Science Engineering</option>
+    <option value="ECE">Electronics and Communication Engineering</option>
+    <option value="EEE">Electrical and Electronics Engineering</option>
+    <option value="MECH">Mechanical Engineering</option>
+    <option value="CIVIL">Civil Engineering</option>
+</select>
+
+<h3>Educational Details</h3>
+<p>Please enter your academic information below.</p>
+
+<table>
+
+<tr>
+<th>Qualification</th>
+<th>Board / University</th>
+<th>Year</th>
+<th>Percentage</th>
+</tr>
+
+<tr>
+<td>10th</td>
+<td><input type="text" id="board10"></td>
+<td><input type="number" id="year10"></td>
+<td><input type="number" id="per10"></td>
+</tr>
+
+<tr>
+<td>Intermediate</td>
+<td><input type="text" id="board12"></td>
+<td><input type="number" id="year12"></td>
+<td><input type="number" id="per12"></td>
+</tr>
+
+<tr>
+<td>Degree</td>
+<td><input type="text" id="boardDegree"></td>
+<td><input type="number" id="yearDegree"></td>
+<td><input type="number" id="perDegree"></td>
+</tr>
+
+</table>
+
+<br>
+
+<label>Upload Passport Size Photo</label>
+<input type="file" id="photo" accept="image/*">
+
+<label>Upload Signature</label>
+<input type="file" id="sign" accept="image/*">
+
+<div class="buttons">
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</div>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<script src="validation.js"></script>
+
+</body>
+</html>
